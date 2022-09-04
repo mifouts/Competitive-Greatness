@@ -257,10 +257,12 @@ nav ul {
     list-style: none;
     position: relative;
 }
+
 nav ul li{
     display: inline-block;
     
 }
+
 nav a{
     display: block;
     padding: 0 10px;
@@ -269,23 +271,31 @@ nav a{
     font-size: 20px;
     text-decoration: none;
 }
+
 /* Hide Dropdown by Default*/
+
 nav ul ul {
     display: none;
     position: absolute;
     top: 60px;
 }
+
 /* hover */
+
 nav a:hover{
     background-color: gray;
     color: #1a1a50;
     transition: all 300ms ease;
 }
+
 /* Display Dropdown on Hover */
+
 nav ul li:hover > ul {
     display: inherit;
 }
-/* Fisrt Tier Dropdown */
+
+/* First Tier Dropdown */
+
 nav ul ul li{
     width: 170px;
     float: none;
@@ -298,14 +308,35 @@ nav ul ul li{
     display: flex;
 }
 
-.nav__link {
+.nav__links {
     margin: 0 12px;
+    color: #243e63;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 300ms ease;
+    cursor: pointer;
+    position: relative;
+    margin: 0 24px;
+    padding: 0 0 4px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    font-weight: 500;
+    margin: 0 24px;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    font-weight: 500;
 }
 
 .nav__link--anchor {
     font-size: 16px;
     font-weight: 700;
 }
+
+.navbar__menu--button {
+    background-color: transparent;
+    color: #1a1a50;
+    padding: 0;
+    display: none;
+  }
 
 .navbar__menu--backdrop {
     visibility: hidden;
@@ -328,9 +359,14 @@ nav ul ul li{
     opacity: 0;
   }
 
-  .navbar__menu--backdrop--item {
-    margin: 32px 0;
-    text-align: center;
+  .menu--open .navbar__menu--backdrop {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .menu--open .navbar__menu--backdrop--item {
+    visibility: visible;
+    opacity: 1;
   }
 
   .navbar__menu--item--text {
@@ -341,63 +377,22 @@ nav ul ul li{
     text-align: center !important;
   }
 
-
-  .menu--open .navbar__menu--backdrop--item {
-    visibility: visible;
-    opacity: 1;
+  .navbar__menu--button {
+    background-color: transparent;
+    color: #1a1a50;
+    padding: 0;
+    display: none;
   }
-  
-  .menu--open .navbar__menu--backdrop {
-    visibility: visible;
-    opacity: 1;
+
+  .navbar__menu {
+    display: none;
   }
-  
-  .navbar__menu--links {
-    display: none !important;
-}
 
-    .navbar__menu--backdrop--button {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 0;
-        border: 0;
-        background-color: transparent;
-        color: #1a1a50;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translate(-15px, 25px);
-      }
+  .navbar__menu--backdrop--item {
+    margin: 32px 0;
+    text-align: center;
+  }
 
-      .navbar__menu {
-        display: none;
-      }
-
-      .nav__links {
-        font-weight: 500;
-        margin: 0 24px;
-        font-size: 14px;
-        letter-spacing: 0.025em;
-        font-weight: 500;
-      }
-
-      .nav__links {
-        color: #243e63;
-        font-weight: 600;
-        font-size: 14px;
-        transition: all 300ms ease;
-        cursor: pointer;
-        position: relative;
-        margin: 0 24px;
-        padding: 0 0 4px;
-        border-bottom: 2px solid rgba(0, 0, 0, 0);
-    }
-    
-    .nav__links:hover{
-        color: white;
-        border-bottom: 2px solid #1a1a50;
-    }
 
 
 
