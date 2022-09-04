@@ -492,3 +492,33 @@ nav ul ul li{
     z-index: 100;
 }
 
+/* PROGRAMS */
+
+
+.section__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+ .programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 16px;
+ }
+
+
+
+ .programs__item img {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+ }
+
+.programs__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
