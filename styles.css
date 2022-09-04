@@ -16,6 +16,10 @@ html {
     height: 100px;
 }
 
+ul {
+    list-style: none;
+}
+
 li {
     list-style: none;
 }
@@ -52,6 +56,7 @@ section {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 button {
@@ -66,7 +71,7 @@ button {
 }
 
 .darkblue {
-    color: darkblue !important;
+    color: #1a1a50 !important;
 }
 
 .link__hover-effect {
@@ -80,7 +85,7 @@ button {
     height: 3px;
     width: 0;
     right: 0;
-    background-color: navy;
+    background-color: #1a1a50;
     transition: all 300ms ease;
 }
 
@@ -129,7 +134,7 @@ input:hover, textarea:hover {
     border-color: #dcdfe6;
 }
 input:focus, textarea:focus {
-    border-color: #8a2be2;
+    border-color: #1a1a50;
 }
 
 .modal--open .modal {
@@ -181,19 +186,6 @@ header {
     display: flex;
 }
 
-.social__link {
-    background-color: #8a2be2;
-    color: white;
-    padding: 6px;
-    width: 32px;
-    height: 32px;
-    font-size: 14px;
-    margin-right: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
 
 .mail__btn {
     width: 70px;
@@ -286,7 +278,7 @@ nav ul ul {
 /* hover */
 nav a:hover{
     background-color: gray;
-    color: darkblue;
+    color: #1a1a50;
     transition: all 300ms ease;
 }
 /* Display Dropdown on Hover */
@@ -349,13 +341,6 @@ nav ul ul li{
     text-align: center !important;
   }
 
-  .nav__signup {
-    margin: 0 !important;
-    padding: 12px 32px;
-    background-color: #6415ff;
-    color: #fff;
-    border-radius: 50px;
-  }
 
   .menu--open .navbar__menu--backdrop--item {
     visibility: visible;
@@ -368,7 +353,8 @@ nav ul ul li{
   }
   
   .navbar__menu--links {
-    display: none !important;}
+    display: none !important;
+}
 
     .navbar__menu--backdrop--button {
         position: absolute;
@@ -377,7 +363,7 @@ nav ul ul li{
         padding: 0;
         border: 0;
         background-color: transparent;
-        color: #6415ff;
+        color: #1a1a50;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -387,6 +373,33 @@ nav ul ul li{
       .navbar__menu {
         display: none;
       }
+
+      .nav__links {
+        font-weight: 500;
+        margin: 0 24px;
+        font-size: 14px;
+        letter-spacing: 0.025em;
+        font-weight: 500;
+      }
+
+      .nav__links {
+        color: #243e63;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 300ms ease;
+        cursor: pointer;
+        position: relative;
+        margin: 0 24px;
+        padding: 0 0 4px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+    
+    .nav__links:hover{
+        color: white;
+        border-bottom: 2px solid #1a1a50;
+    }
+
+
 
 
 
@@ -491,8 +504,8 @@ nav ul ul li{
 }
 
 .form__submit {
-    background-color: darkblue;
-    border: 2px solid darkblue;
+    background-color: #1a1a50;
+    border: 2px solid #1a1a50;
     color: white;
     font-weight: 700;
     width: 100%;
@@ -508,8 +521,8 @@ nav ul ul li{
 }
 
 .form__submit:active {
-    border-color: darkblue;
-    color: darkblue;
+    border-color: #1a1a50;
+    color: #1a1a50;
 }
 
 .modal__overlay {
@@ -525,7 +538,7 @@ nav ul ul li{
 }
 
 .modal__overlay--loading {
-    background-color: darkblue;
+    background-color: #1a1a50;
     font-size: 80px;
 }
 
