@@ -64,6 +64,46 @@
                 link--hover-effect--black">Shop</a>
             </li>
         </ul>
+        <button class="navbar__menu--button" onclick="openMenu()">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="navbar__menu">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg> 
+        </button>
+        <div class="navbar__menu--backdrop">
+            <button class="navbar__menu--backdrop--button" onclick="closeMenu()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navbar__menu--cross"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <ul class="navbar__menu--backdrop--list">
+              <li class="navbar__menu--backdrop--item">
+                <a href="#" class="nav__link link__hover-effect navbar__menu--item--text"">About Us</a>
+              </li>
+              <li class="navbar__menu--backdrop--item">
+                <a href="#" class="nav__link link__hover-effect navbar__menu--item--text"">Training Options</a>
+              </li>
+              <li class="navbar__menu--backdrop--item">
+                <a href="#" class="nav__link link__hover-effect navbar__menu--item--text"">Pricing</a>
+              </li>
+              <li class="navbar__menu--backdrop--item">
+                <a href="#" class="nav__link link__hover-effect navbar__menu--item--text"">Partners</a>
+              </li>
+              <li class="navbar__menu--backdrop--item">
+                <a href="#" class="nav__link link__hover-effect navbar__menu--item--text"">Shop</a>
+              </li>
+            </ul>
+          </div>
+</div>
     </nav>
     <header class="header">
         <div class="header__content">
