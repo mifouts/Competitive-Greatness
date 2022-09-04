@@ -504,7 +504,7 @@ nav ul ul li{
  .programs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 16px;
+    grid-gap: 32px;
  }
 
 
