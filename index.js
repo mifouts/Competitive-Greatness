@@ -8,3 +8,12 @@ function toggleModal(){
     isModalOpen = true;
     document.body.classList += " modal--open";
 }
+
+
+function openMenu() {
+    document.body.classList += "menu--open" ;
+}
+
+function closeMenu() {
+    document.body.classList.remove('menu--open')
+}
